@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%" preserveAspectRatio="none">
+  <defs>
+    <radialGradient id="cardParchGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fffcf2" />
+      <stop offset="45%" stop-color="#fbf1da" />
+      <stop offset="75%" stop-color="#ebd29f" />
+      <stop offset="90%" stop-color="#cca262" />
+      <stop offset="97%" stop-color="#8c4c16" />
+      <stop offset="100%" stop-color="#451f08" />
+    </radialGradient>
+    <radialGradient id="cardBurn" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" stop-color="rgba(69,31,8,0)" />
+      <stop offset="88%" stop-color="rgba(110,54,16,0.3)" />
+      <stop offset="96%" stop-color="rgba(80,32,8,0.75)" />
+      <stop offset="100%" stop-color="rgba(40,15,4,0.96)" />
+    </radialGradient>
+    <filter id="cardRough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="9" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <g filter="url(#cardRough)">
+    <path d="M 35 25 Q 300 20, 500 22 Q 800 20, 965 28 Q 975 200, 970 325 Q 976 480, 965 625 Q 700 630, 500 628 Q 300 632, 35 625 Q 25 480, 28 325 Q 24 200, 35 25 Z" fill="#381705" opacity="0.92" />
+    <path d="M 40 30 Q 300 25, 500 27 Q 800 25, 960 33 Q 968 200, 964 325 Q 969 480, 960 620 Q 700 625, 500 623 Q 300 627, 40 620 Q 30 480, 34 325 Q 30 200, 40 30 Z" fill="url(#cardParchGrad)" />
+    <path d="M 40 30 Q 300 25, 500 27 Q 800 25, 960 33 Q 968 200, 964 325 Q 969 480, 960 620 Q 700 625, 500 623 Q 300 627, 40 620 Q 30 480, 34 325 Q 30 200, 40 30 Z" fill="url(#cardBurn)" />
+  </g>
+
+  <g stroke="#b0874e" stroke-width="0.75" opacity="0.25" stroke-dasharray="4 2">
+    <line x1="70" y1="120" x2="930" y2="120" />
+    <line x1="70" y1="165" x2="930" y2="165" />
+    <line x1="70" y1="210" x2="930" y2="210" />
+    <line x1="70" y1="255" x2="930" y2="255" />
+    <line x1="70" y1="300" x2="930" y2="300" />
+    <line x1="70" y1="345" x2="930" y2="345" />
+    <line x1="70" y1="390" x2="930" y2="390" />
+    <line x1="70" y1="435" x2="930" y2="435" />
+    <line x1="70" y1="480" x2="930" y2="480" />
+    <line x1="70" y1="525" x2="930" y2="525" />
+    <line x1="70" y1="570" x2="930" y2="570" />
+  </g>
+</svg>

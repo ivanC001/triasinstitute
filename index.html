@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trias Institute | Convierte tu Experiencia en Influencia, Autoridad y Legado</title>
+  <meta name="description" content="Trias Institute es la organización internacional de formación, mentoría y desarrollo fundada por Juan Renedo. Conviértete en Conferencista, Autor y Consultor.">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/eventos.css">
+  <link rel="stylesheet" href="css/home-editorial.css">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Global SVG Gradient Definitions for Curved Franjas -->
+  <svg width="0" height="0" style="position: absolute; pointer-events: none;">
+    <defs>
+      <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#BC8625" />
+        <stop offset="50%" stop-color="#F5D77F" />
+        <stop offset="100%" stop-color="#BC8625" />
+      </linearGradient>
+      <linearGradient id="greenStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#1F2C26" />
+        <stop offset="50%" stop-color="#3A5953" />
+        <stop offset="100%" stop-color="#1F2C26" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- Background Interactive Particles Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Ambient Luxury Glows -->
+  <div class="ambient-glow ambient-glow-gold" style="top: -150px; left: -100px; width: 600px; height: 600px;"></div>
+  <div class="ambient-glow ambient-glow-green" style="top: 25%; right: -150px; width: 700px; height: 700px;"></div>
+  <div class="ambient-glow ambient-glow-gold" style="top: 60%; left: -200px; width: 800px; height: 800px;"></div>
+
+
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Trias Institute">
+        <div class="logo-symbol">
+          <img
+            src="assets/logo/trias_emblem_white.png"
+            alt="Trias Institute"
+            class="brand-mark-image brand-mark-white"
+          >
+        </div>
+        <div class="logo-text">
+          <span class="main-name">TRIAS INSTITUTE</span>
+          <span class="sub-name">AUTORES · DISERTANTES · CONSULTORES</span>
+        </div>
+      </a>
+
+      <div class="nav-drawer" id="nav-drawer">
+        <ul class="nav-links">
+          <li><a href="#trilogia" class="nav-link">La Trilogía</a></li>
+          <li><a href="#metodo" class="nav-link">Método 360</a></li>
+          <li><a href="#temas" class="nav-link">+900 Temas</a></li>
+          <li><a href="#franquicias" class="nav-link">Franquicias</a></li>
+          <li><a href="eventos/index.html" class="nav-link">Eventos</a></li>
+        </ul>
+        <div class="mobile-drawer-actions">
+          <a href="assets/pdf/DOSSIER%20TRIAS.pdf" target="_blank" download="DOSSIER_TRIAS.pdf" class="btn btn-secondary btn-block">
+            <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+            <span>Descargar Dossier (PDF)</span>
+          </a>
+          <button class="btn btn-primary btn-block" data-open-modal="lead-modal">
+            <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+            <span>Evaluar mi Perfil</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+
+        <button class="btn btn-primary btn-sm nav-cta-btn" data-open-modal="lead-modal">
+          <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+          <span>Evaluar mi Perfil</span>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Abrir Menú">
+          <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <main>
+  <section class="hero-section hero-editorial" id="hero">
+    <!-- Curved Ambient Color Bands -->
+
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Hero Text -->
+        <div class="hero-content reveal">
+          <div class="hero-badge-wrapper">
+            <span class="badge badge-gold">
+              <span class="badge-dot"></span>
+              ACADEMIA DE AUTORES · DISERTANTES · CONSULTORES
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Tres Caminos. Un Propósito: <br class="desktop-only"><span class="hero-title-accent">Dejar Huella</span> y <span class="text-white">Trascender</span>.
+          </h1>
+
+          <p class="hero-subtitle">
+            Trias Institute es la organización internacional fundada por <strong>Juan Renedo</strong> para ayudar a profesionales experimentados a convertirse en referentes reconocidos mediante una metodología integral probada: <em>Autor, Disertante y Consultor</em>.
+          </p>
+
+
+
+          <div class="hero-cta-group">
+            <a href="#diagnostico" class="btn btn-primary btn-lg">
+              <i data-lucide="compass" style="width: 20px; height: 20px;"></i>
+              <span>Descubre tu Ruta Ideal</span>
+            </a>
+            <a href="assets/pdf/DOSSIER%20TRIAS.pdf" download="DOSSIER_TRIAS.pdf" target="_blank" class="btn btn-secondary btn-lg">
+              <i data-lucide="download" style="width: 20px; height: 20px;"></i>
+              <span>Descargar Dossier (PDF)</span>
+            </a>
+            <button class="btn btn-outline-gold btn-lg" data-open-modal="franchise-modal">
+              <i data-lucide="globe" style="width: 20px; height: 20px;"></i>
+              <span>Llevar Trias a tu Ciudad</span>
+            </button>
+          </div>
+
+          <div class="hero-proof">
+            <div class="proof-avatars">
+              <div class="avatar-stack">
+                <img src="assets/images/alumni_avatar_1.jpg" alt="Egresada Trias Institute" class="avatar-circle">
+                <img src="assets/images/alumni_avatar_2.jpg" alt="Egresado Trias Institute" class="avatar-circle">
+                <img src="assets/images/alumni_avatar_3.jpg" alt="Egresada Trias Institute" class="avatar-circle">
+                <img src="assets/images/alumni_avatar_4.jpg" alt="Egresado Trias Institute" class="avatar-circle">
+              </div>
+            </div>
+            <div class="proof-text">
+              <div class="stars">★★★★★</div>
+              <span class="label">Avalado por <strong>cientos de profesionales</strong> en Iberoamérica</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Realistic Visual Asset with Interactive Match Switcher -->
+        <div class="hero-visual-wrapper reveal reveal-delay-2">
+          
+          <div class="hero-image-switcher">
+            <button class="hero-tab-btn active" data-hero-target="speaker">
+              <span>Disertante</span>
+            </button>
+            <button class="hero-tab-btn" data-hero-target="author">
+              <span>Autor</span>
+            </button>
+            <button class="hero-tab-btn" data-hero-target="consultant">
+              <span>Consultor</span>
+            </button>
+            <button class="hero-tab-btn" data-hero-target="trias360">
+              <span>Trilogía Trias</span>
+            </button>
+          </div>
+
+          <div class="hero-3d-card" id="hero-tilt-card">
+            <img id="hero-active-image" src="assets/images/hero_speaker_stage.jpg" alt="Trias Institute - Conferencia Magistral y Liderazgo" fetchpriority="high">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       STATS & INTERNATIONAL CITIES STRIP
+       ========================================================================== -->
+  <section class="stats-strip-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <svg class="stat-editorial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+          <div class="stat-number" data-counter="900" data-prefix="+" data-suffix="">+900</div>
+          <div class="stat-label">Temas de Capacitación Especializada</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <svg class="stat-editorial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1M12 18v4M8 22h8"/></svg>
+          <div class="stat-number" data-counter="3" data-prefix="" data-suffix="D">3D</div>
+          <div class="stat-label">Plataformas: Hablar, Escribir y Asesorar</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <svg class="stat-editorial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>
+          <div class="stat-number" data-counter="15" data-prefix="+" data-suffix=" Países">+15 Países</div>
+          <div class="stat-label">Red y Presencia Internacional</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <svg class="stat-editorial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4M12 3l8 3v6c0 5-8 9-8 9s-8-4-8-9V6z"/></svg>
+          <div class="stat-number" data-counter="100" data-prefix="" data-suffix="%">100%</div>
+          <div class="stat-label">Metodología Práctica y Aplicada</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container international-presence">
+      <h2>Presencia internacional</h2>
+      <div class="cities-carousel" tabindex="0" role="region" aria-label="Carrusel de ciudades; se pausa al enfocar o pasar el cursor">
+        <div class="cities-carousel-track">
+      <ul class="international-cities" aria-label="Ciudades de nuestra red">
+        <li><img class="city-flag" src="assets/flags/es.svg" alt="España" width="24" height="16"> <span>Madrid</span></li>
+        <li><img class="city-flag" src="assets/flags/us.svg" alt="Estados Unidos" width="24" height="16"> <span>Miami</span></li>
+        <li><img class="city-flag" src="assets/flags/mx.svg" alt="México" width="24" height="16"> <span>Ciudad de México</span></li>
+        <li><img class="city-flag" src="assets/flags/co.svg" alt="Colombia" width="24" height="16"> <span>Bogotá</span></li>
+        <li><img class="city-flag" src="assets/flags/br.svg" alt="Brasil" width="24" height="16"> <span>São Paulo</span></li>
+        <li><img class="city-flag" src="assets/flags/ar.svg" alt="Argentina" width="24" height="16"> <span>Buenos Aires</span></li>
+        <li><img class="city-flag" src="assets/flags/cl.svg" alt="Chile" width="24" height="16"> <span>Santiago</span></li>
+        <li><img class="city-flag" src="assets/flags/pe.svg" alt="Perú" width="24" height="16"> <span>Lima</span></li>
+        <li><img class="city-flag" src="assets/flags/es.svg" alt="España" width="24" height="16"> <span>Barcelona</span></li>
+      </ul>
+      <ul class="international-cities" aria-hidden="true">
+        <li><img class="city-flag" src="assets/flags/es.svg" alt="España" width="24" height="16"> <span>Madrid</span></li>
+        <li><img class="city-flag" src="assets/flags/us.svg" alt="Estados Unidos" width="24" height="16"> <span>Miami</span></li>
+        <li><img class="city-flag" src="assets/flags/mx.svg" alt="México" width="24" height="16"> <span>Ciudad de México</span></li>
+        <li><img class="city-flag" src="assets/flags/co.svg" alt="Colombia" width="24" height="16"> <span>Bogotá</span></li>
+        <li><img class="city-flag" src="assets/flags/br.svg" alt="Brasil" width="24" height="16"> <span>São Paulo</span></li>
+        <li><img class="city-flag" src="assets/flags/ar.svg" alt="Argentina" width="24" height="16"> <span>Buenos Aires</span></li>
+        <li><img class="city-flag" src="assets/flags/cl.svg" alt="Chile" width="24" height="16"> <span>Santiago</span></li>
+        <li><img class="city-flag" src="assets/flags/pe.svg" alt="Perú" width="24" height="16"> <span>Lima</span></li>
+        <li><img class="city-flag" src="assets/flags/es.svg" alt="España" width="24" height="16"> <span>Barcelona</span></li>
+      </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROPOSITO & TRANSFORMACIÓN
+       ========================================================================== -->
+  <section class="transformation-section" id="proposito">
+    <!-- Curved Ambient Color Bands -->
+    <div class="curved-accent-band curved-accent-band-green" style="top: 15%; right: -80px; width: 550px; height: 180px; opacity: 0.15;"></div>
+    <div class="curved-accent-band curved-accent-band-gold" style="bottom: 10%; left: -60px; width: 420px; height: 140px; opacity: 0.15;"></div>
+
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">DE PROFESIONAL A REFERENTE</span>
+        <h2>Tu experiencia tiene valor, pero ¿tienes el <span class="text-gold-gradient">reconocimiento</span> que mereces?</h2>
+        <p>
+          La mayoría de los profesionales acumulan 10, 20 o 30 años de conocimientos, pero no siempre saben cómo convertirlos en una propuesta de valor de alto impacto y escala global.
+        </p>
+      </div>
+
+      <div class="transform-grid">
+        
+        <!-- Before Trias -->
+        <div class="transform-card card-before reveal">
+          <div>
+            <div class="transform-card-header">
+              <span class="badge" style="background: rgba(239, 68, 68, 0.12); color: #dc2626; border: 1px solid rgba(239, 68, 68, 0.25);">
+                EL CAMINO CONVENCIONAL
+              </span>
+              <h3>Acumular conocimiento sin monetizarlo</h3>
+            </div>
+            <ul class="transform-list">
+              <li class="transform-item">
+                <span class="transform-icon">✕</span>
+                <span>Dependencia absoluta de horas de trabajo y honorarios lineales.</span>
+              </li>
+              <li class="transform-item">
+                <span class="transform-icon">✕</span>
+                <span>Sin libros ni propiedad intelectual que construyan autoridad automática.</span>
+              </li>
+              <li class="transform-item">
+                <span class="transform-icon">✕</span>
+                <span>Dificultad para empaquetar la experiencia en conferencias pagadas.</span>
+              </li>
+              <li class="transform-item">
+                <span class="transform-icon">✕</span>
+                <span>Invisibilidad frente a grandes empresas y tomadores de decisiones.</span>
+              </li>
+            </ul>
+          </div>
+          <div style="font-size: 0.9rem; color: #64748b; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.06);">
+            Resultado: Alto conocimiento, baja influencia y sin escala profesional.
+          </div>
+        </div>
+
+        <!-- After Trias -->
+        <div class="transform-card card-after reveal reveal-delay-2">
+          <div>
+            <div class="transform-card-header">
+              <span class="badge badge-gold">EL MODELO TRIAS INSTITUTE</span>
+              <h3>Una plataforma profesional en tres dimensiones</h3>
+            </div>
+            <ul class="transform-list">
+              <li class="transform-item">
+                <span class="transform-icon">✓</span>
+                <span><strong>Disertante Cotizado:</strong> Escenarios, oratoria y conferencias magistrales corporativas.</span>
+              </li>
+              <li class="transform-item">
+                <span class="transform-icon">✓</span>
+                <span><strong>Autor de Referencia:</strong> Libros y metodologías registradas internacionalmente ("Ideas que Trascienden").</span>
+              </li>
+              <li class="transform-item">
+                <span class="transform-icon">✓</span>
+                <span><strong>Consultor Estratégico:</strong> Soluciones B2B de alto valor para empresas y líderes.</span>
+              </li>
+              <li class="transform-item">
+                <span class="transform-icon">✓</span>
+                <span><strong>Legado Profesional:</strong> Vivir de tu conocimiento y transformar comunidades.</span>
+              </li>
+            </ul>
+          </div>
+          <div style="font-size: 0.9rem; color: var(--gold-light); font-weight: 700; padding-top: 1rem; border-top: 1px solid rgba(225, 171, 72, 0.35);">
+            Tres Caminos. Un Propósito: Dejar Huella.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LA TRILOGÍA TRIAS (3 CORE REALISTIC CARDS)
+       ========================================================================== -->
+  <section class="trilogy-section trilogy-editorial" id="trilogia">
+
+
+    <!-- Curved Ambient Color Bands -->
+
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">LA ACADEMIA TRIAS / TRES ESPECIALIDADES</span>
+        <h2>Tres formas de convertir<br>tu experiencia en <span>legado.</span></h2>
+        <p>
+          No importa si eres empresario, médico, abogado, ingeniero, psicólogo o directivo. Si tienes experiencia, nuestro sistema te prepara para dominar las tres facetas de máximo impacto.
+        </p>
+      </div>
+
+      <div class="trilogy-grid">
+        
+        <!-- Card 1: DISERTANTE -->
+        <div class="trilogy-card reveal">
+          <div class="trilogy-card-media">
+            <img loading="lazy" src="assets/images/trilogy_speaker_card.jpg" alt="Disertante Trias Institute">
+            
+          </div>
+          <div class="trilogy-card-body">
+            <p class="specialty-kicker">01 / COMPARTE TU VOZ</p><h3>Disertante<span class="specialty-period">.</span></h3>
+            <p>
+              <strong>Inspira. Motiva. Trasciende.</strong> Aprende a comunicar tus conocimientos con maestría escénica, conectar con audiencias multitudinarias y construir una carrera cotizada como orador magistral.
+            </p>
+            <ul class="trilogy-features">
+              <li><i data-lucide="check"></i> Oratoria de élite y presencia escénica</li>
+              <li><i data-lucide="check"></i> Diseño y creación de conferencias magistrales</li>
+              <li><i data-lucide="check"></i> Storytelling estratégico de alto impacto</li>
+              <li><i data-lucide="check"></i> Comercialización y contratación en empresas</li>
+            </ul>
+            <button class="btn btn-outline-gold btn-block" data-open-modal="lead-modal">
+              <span>Especialidad Disertante</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2: AUTOR -->
+        <div class="trilogy-card reveal reveal-delay-1">
+          <div class="trilogy-card-media">
+            <img loading="lazy" src="assets/images/trilogy_author_card.jpg" alt="Autor Trias Institute">
+            
+          </div>
+          <div class="trilogy-card-body">
+            <p class="specialty-kicker">02 / ESCRIBE TU LEGADO</p><h3>Autor<span class="specialty-period">.</span></h3>
+            <p>
+              <strong>Escribe tu legado. Lidera con ideas que perduran.</strong> Transforma tus conocimientos en libros insignia, metodologías registradas y propiedad intelectual con autoridad indiscutible.
+            </p>
+            <ul class="trilogy-features">
+              <li><i data-lucide="check"></i> Escritura y publicación de libros insignia</li>
+              <li><i data-lucide="check"></i> Creación de metodologías y marcos propios</li>
+              <li><i data-lucide="check"></i> Propiedad intelectual y monetización editorial</li>
+              <li><i data-lucide="check"></i> Posicionamiento y plataformas de comunicación</li>
+            </ul>
+            <button class="btn btn-outline-gold btn-block" data-open-modal="lead-modal">
+              <span>Especialidad Autor</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3: CONSULTOR -->
+        <div class="trilogy-card reveal reveal-delay-2">
+          <div class="trilogy-card-media">
+            <img loading="lazy" src="assets/images/trilogy_consultant_card.jpg" alt="Consultor Trias Institute">
+            
+          </div>
+          <div class="trilogy-card-body">
+            <p class="specialty-kicker">03 / TRANSFORMA ORGANIZACIONES</p><h3>Consultor<span class="specialty-period">.</span></h3>
+            <p>
+              <strong>Experto. Estratégico. Esencial.</strong> Convierte tu bagaje en servicios de consultoría y mentoría de alto valor para empresas, organizaciones y líderes que demandan tu experiencia.
+            </p>
+            <ul class="trilogy-features">
+              <li><i data-lucide="check"></i> Creación de servicios de consultoría B2B</li>
+              <li><i data-lucide="check"></i> Estructuración de propuestas de alto ticket</li>
+              <li><i data-lucide="check"></i> Modelos de monetización del conocimiento</li>
+              <li><i data-lucide="check"></i> Soluciones empresariales y programas corporativos</li>
+            </ul>
+            <button class="btn btn-outline-gold btn-block" data-open-modal="lead-modal">
+              <span>Especialidad Consultor</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- ==========================================================================
+       EL MÉTODO TRIAS & ECOSISTEMA 360
+       ========================================================================== -->
+  <section class="method-section" id="metodo">
+    <!-- Curved Ambient Color Bands -->
+    <div class="curved-accent-band curved-accent-band-green" style="top: 15%; right: 8%; width: 520px; height: 180px; opacity: 0.15;"></div>
+    <div class="curved-accent-band curved-accent-band-gold" style="bottom: 15%; left: 5%; width: 460px; height: 160px; opacity: 0.15;"></div>
+
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">SISTEMA INTEGRADO</span>
+        <h2>El Método Trias: <span class="text-gold-gradient">Habla · Escribe · Asesora</span></h2>
+        <p>
+          Cuando estas tres dimensiones trabajan juntas, el profesional multiplica su alcance, su reputación y sus ingresos de forma exponencial.
+        </p>
+      </div>
+
+      <!-- 3 Steps -->
+      <div class="method-steps-grid">
+        <div class="method-step-card reveal">
+          <div class="step-number">01</div>
+          <h3>HABLAR</h3>
+          <p>
+            Convertir el conocimiento y los aprendizajes de años en conferencias magistrales capaces de cautivar audiencias e inspirar cambios reales.
+          </p>
+        </div>
+        <div class="method-step-card reveal reveal-delay-1">
+          <div class="step-number">02</div>
+          <h3>ESCRIBIR</h3>
+          <p>
+            Plasmar tu experiencia en libros y contenidos de referencia que viajan por el mundo y te otorgan el estatus de máxima autoridad.
+          </p>
+        </div>
+        <div class="method-step-card reveal reveal-delay-2">
+          <div class="step-number">03</div>
+          <h3>ASESORAR</h3>
+          <p>
+            Empaquetar soluciones concretas en programas de consultoría y mentoría por las que empresas e instituciones pagan sumas considerables.
+          </p>
+        </div>
+      </div>
+
+      <!-- 6 Pilares de Acompañamiento -->
+      <div class="pillars-header reveal">
+        <h3>¿Cómo te acompañamos en todo el proceso?</h3>
+        <p>Nuestro sistema integra 6 herramientas de desarrollo continuo:</p>
+      </div>
+
+      <div class="pillars-grid">
+        
+        <div class="pillar-card reveal">
+          <div class="pillar-icon"><i data-lucide="book"></i></div>
+          <div class="pillar-info">
+            <h4>Formación</h4>
+            <p>Contenido estructurado, práctico, modular y aplicable desde el primer día.</p>
+          </div>
+        </div>
+
+        <div class="pillar-card reveal reveal-delay-1">
+          <div class="pillar-icon"><i data-lucide="target"></i></div>
+          <div class="pillar-info">
+            <h4>Entrenamiento</h4>
+            <p>Práctica intensiva, simulaciones y perfeccionamiento de habilidades clave.</p>
+          </div>
+        </div>
+
+        <div class="pillar-card reveal reveal-delay-2">
+          <div class="pillar-icon"><i data-lucide="compass"></i></div>
+          <div class="pillar-info">
+            <h4>Coaching</h4>
+            <p>Acompañamiento para potenciar fortalezas y definir objetivos claros de carrera.</p>
+          </div>
+        </div>
+
+        <div class="pillar-card reveal reveal-delay-3">
+          <div class="pillar-icon"><i data-lucide="users"></i></div>
+          <div class="pillar-info">
+            <h4>Mentoría</h4>
+            <p>Orientación directa de expertos con experiencia comprobada en el mercado.</p>
+          </div>
+        </div>
+
+        <div class="pillar-card reveal reveal-delay-4">
+          <div class="pillar-icon"><i data-lucide="cpu"></i></div>
+          <div class="pillar-info">
+            <h4>Metodología</h4>
+            <p>Marcos y procesos para convertir conocimiento en activos de valor comercial.</p>
+          </div>
+        </div>
+
+        <div class="pillar-card reveal reveal-delay-5">
+          <div class="pillar-icon"><i data-lucide="globe"></i></div>
+          <div class="pillar-info">
+            <h4>Comunidad</h4>
+            <p>Red internacional de profesionales que generan alianzas y oportunidades conjuntas.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       +900 TEMAS DE CAPACITACIÓN (INTERACTIVE EXPLORER)
+       ========================================================================== -->
+  <section class="topics-section" id="temas">
+    <!-- Franja 4: Olas Rítmicas Triples (Método White to Temas Blue) -->
+    <div class="section-divider-curve divider-pos-top">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path d="M0,0 L1440,0 L1440,40 C1320,65 1160,-15 880,25 C580,75 320,5 0,40 Z" fill="#ffffff"></path>
+        <path d="M0,40 C320,5 580,75 880,25 C1160,-15 1320,65 1440,40" stroke="url(#goldStroke)" stroke-width="4" fill="none"></path>
+        <path d="M0,47 C320,12 580,82 880,32 C1160,-8 1320,72 1440,47" stroke="rgba(58, 89, 83, 0.65)" stroke-width="4.5" fill="none"></path>
+      </svg>
+    </div>
+
+    <!-- Curved Ambient Color Bands -->
+    <div class="curved-accent-band curved-accent-band-gold" style="top: 20%; left: -80px; width: 550px; height: 180px;"></div>
+    <div class="curved-accent-band curved-accent-band-green" style="bottom: 15%; right: -50px; width: 480px; height: 160px;"></div>
+
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">BIBLIOTECA CURRICULAR</span>
+        <h2>Más de <span class="text-gold-gradient">900 Temas</span> de Capacitación</h2>
+        <p>
+          Trias Institute cuenta con la biblioteca de formación profesional más extensa para adaptar programas a diferentes sectores, profesiones y empresas.
+        </p>
+      </div>
+
+      <!-- Controls -->
+      <div class="topics-controls reveal">
+        <div class="search-box">
+          <i data-lucide="search" class="search-icon"></i>
+          <input type="text" id="topic-search" class="search-input" placeholder="Buscar entre +900 temas (ej. Oratoria, Libros, IA, Liderazgo, Negociación)...">
+        </div>
+
+        <div class="topic-filters">
+          <button class="filter-btn active" data-filter="all">Todos los temas</button>
+          <button class="filter-btn" data-filter="oratoria">Oratoria & Escenario</button>
+          <button class="filter-btn" data-filter="marca">Marca & Posicionamiento</button>
+          <button class="filter-btn" data-filter="editorial">Libros & Editorial</button>
+          <button class="filter-btn" data-filter="consultoria">Consultoría B2B</button>
+          <button class="filter-btn" data-filter="ia">IA Aplicada</button>
+          <button class="filter-btn" data-filter="liderazgo">Liderazgo & Ventas</button>
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div class="topics-grid" id="topics-grid">
+        <!-- Rendered by interactive.js -->
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="topics-cta-banner reveal">
+        <div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">¿Deseas el Catálogo Completo de +900 Temas y Programas?</h3>
+          <p style="margin: 0; color: var(--text-secondary);">Descarga inmediatamente el dossier institucional y curricular oficial de Trias Institute.</p>
+        </div>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="assets/pdf/DOSSIER%20TRIAS.pdf" download="DOSSIER_TRIAS.pdf" target="_blank" class="btn btn-primary">
+            <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+            <span>Descargar Dossier Completo (PDF)</span>
+          </a>
+          <button class="btn btn-secondary" data-open-modal="lead-modal">
+            <i data-lucide="calendar" style="width: 18px; height: 18px;"></i>
+            <span>Solicitar Asesoría</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Franja 5: Sesgado Invertido con Declive (Temas Pine to Diagnóstico Light Slate) -->
+    <div class="section-divider-curve divider-pos-bottom">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path d="M0,75 L1440,10 L1440,90 L0,90 Z" fill="#f4f6f5"></path>
+        <path d="M0,75 L1440,10" stroke="url(#goldStroke)" stroke-width="4.5" fill="none"></path>
+        <path d="M0,82 L1440,17" stroke="rgba(58, 89, 83, 0.65)" stroke-width="5" fill="none"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DIAGNÓSTICO INTERACTIVO (TRIAS CAREER ASSESSOR)
+       ========================================================================== -->
+  <section class="assessor-section" id="diagnostico">
+    <!-- Curved Ambient Color Bands -->
+    <div class="curved-accent-band curved-accent-band-green" style="top: 10%; right: 5%; width: 500px; height: 180px; opacity: 0.15;"></div>
+    <div class="curved-accent-band curved-accent-band-gold" style="bottom: 10%; left: 5%; width: 450px; height: 150px; opacity: 0.15;"></div>
+
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">EVALUACIÓN DE PERFIL</span>
+        <h2>Descubre tu <span class="text-gold-gradient">Ruta Ideal</span> en Trias</h2>
+        <p>
+          Responde 3 preguntas estratégicas y nuestro algoritmo te recomendará el programa óptimo para monetizar tu experiencia.
+        </p>
+      </div>
+
+      <div class="assessor-wrapper reveal">
+        <div class="quiz-progress">
+          <div class="progress-bar-seg completed"></div>
+          <div class="progress-bar-seg"></div>
+          <div class="progress-bar-seg"></div>
+          <div class="progress-bar-seg"></div>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="quiz-step active" id="quiz-step-1">
+          <h3 class="quiz-question">1. ¿Cuál es tu disciplina o área profesional principal?</h3>
+          <div class="quiz-options-grid">
+            <div class="quiz-option-card" data-field="profession" data-value="empresario">
+              <span class="quiz-option-icon">🏢</span>
+              <div class="quiz-option-text">
+                <h4>Empresario / Ejecutivo / Directivo</h4>
+                <p>Dirección general, finanzas, operaciones, RRHH.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-field="profession" data-value="salud">
+              <span class="quiz-option-icon">🩺</span>
+              <div class="quiz-option-text">
+                <h4>Salud, Psicología o Medicina</h4>
+                <p>Médicos, terapeutas, coaches, nutricionistas.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-field="profession" data-value="legal">
+              <span class="quiz-option-icon">⚖️</span>
+              <div class="quiz-option-text">
+                <h4>Derecho, Ingeniería o Consultoría</h4>
+                <p>Abogados, auditores, ingenieros, arquitectos.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-field="profession" data-value="educacion">
+              <span class="quiz-option-icon">🎓</span>
+              <div class="quiz-option-text">
+                <h4>Educación, Deporte o Arte</h4>
+                <p>Docentes, deportistas de alto nivel, creativos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-actions" style="justify-content: flex-end;">
+            <button type="button" class="btn btn-primary quiz-next-btn">
+              <span>Continuar</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="quiz-step" id="quiz-step-2">
+          <h3 class="quiz-question">2. ¿Cuántos años de experiencia acumulas en tu sector?</h3>
+          <div class="quiz-options-grid">
+            <div class="quiz-option-card" data-field="years" data-value="3-5">
+              <span class="quiz-option-icon">🌱</span>
+              <div class="quiz-option-text">
+                <h4>3 a 7 años</h4>
+                <p>Trayectoria sólida en consolidación de conocimiento.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-field="years" data-value="8-15">
+              <span class="quiz-option-icon">🚀</span>
+              <div class="quiz-option-text">
+                <h4>8 a 15 años</h4>
+                <p>Dominio avanzado y casos de éxito comprobados.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-field="years" data-value="15+">
+              <span class="quiz-option-icon">👑</span>
+              <div class="quiz-option-text">
+                <h4>Más de 15 o 20 años</h4>
+                <p>Vasta experiencia lista para ser empaquetada como legado.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-field="years" data-value="investigacion">
+              <span class="quiz-option-icon">🔬</span>
+              <div class="quiz-option-text">
+                <h4>Especialización Científica / Técnica</h4>
+                <p>Publicaciones, estudios y rigor metodológico.</p>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-actions">
+            <button type="button" class="btn btn-secondary quiz-prev-btn">Atrás</button>
+            <button type="button" class="btn btn-primary quiz-next-btn">
+              <span>Continuar</span>
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="quiz-step" id="quiz-step-3">
+          <h3 class="quiz-question">3. ¿Cuál es tu objetivo profesional prioritario hoy?</h3>
+          <div class="quiz-options-grid">
+            <div class="quiz-option-card" data-field="goal" data-value="all">
+              <span class="quiz-option-icon">✨</span>
+              <div class="quiz-option-text">
+                <h4>Trilogía Completa 360</h4>
+                <p>Ser Conferencista, publicar mi Libro y crear Consultoría.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-field="goal" data-value="speaker">
+              <span class="quiz-option-icon">🎤</span>
+              <div class="quiz-option-text">
+                <h4>Convertirme en Conferencista</h4>
+                <p>Subirme a escenarios y cobrar por mis ponencias.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-field="goal" data-value="author">
+              <span class="quiz-option-icon">📚</span>
+              <div class="quiz-option-text">
+                <h4>Publicar mi Libro Insignia</h4>
+                <p>Crear mi metodología propia y posicionar mi marca editorial.</p>
+              </div>
+            </div>
+            <div class="quiz-option-card" data-field="goal" data-value="consultant">
+              <span class="quiz-option-icon">💼</span>
+              <div class="quiz-option-text">
+                <h4>Escalar a Consultoría B2B</h4>
+                <p>Vender soluciones corporativas de alto valor a empresas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-actions">
+            <button type="button" class="btn btn-secondary quiz-prev-btn">Atrás</button>
+            <button type="button" class="btn btn-primary quiz-next-btn">
+              <span>Ver mi Diagnóstico</span>
+              <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 4 (Result) -->
+        <div class="quiz-step" id="quiz-step-4">
+          <div class="quiz-result-box">
+            <span class="badge badge-gold result-badge" id="result-program-badge">Recomendación Personalizada</span>
+            <h3 id="result-program-title">TRIAS 360: Programa Integral</h3>
+            <p id="result-program-desc">
+              Tu perfil y nivel de experiencia están listos para la dimensión completa de Trias. Desarrollarás de forma coordinada tu carrera como Conferencista, tu primer Libro y tu metodología de Consultoría de Alto Valor.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+              <button class="btn btn-primary btn-lg" data-open-modal="lead-modal">
+                <i data-lucide="calendar" style="width: 18px; height: 18px;"></i>
+                <span>Agendar Sesión de Admisión</span>
+              </button>
+              <a href="assets/pdf/DOSSIER%20TRIAS.pdf" download="DOSSIER_TRIAS.pdf" target="_blank" class="btn btn-secondary btn-lg">
+                <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+                <span>Descargar Dossier (PDF)</span>
+              </a>
+              <button class="btn btn-secondary" id="quiz-restart-btn">
+                <i data-lucide="rotate-ccw" style="width: 16px; height: 16px;"></i>
+                <span>Reiniciar Test</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FUNDADOR: JUAN RENEDO
+       ========================================================================== -->
+  <section class="founder-section" id="fundador">
+    <!-- Franja 6: Onda de Cresta Marina (Diagnóstico Light Slate to Fundador Pine) -->
+    <div class="section-divider-curve divider-pos-top">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path d="M0,0 L1440,0 L1440,25 C1380,45 1280,85 1120,65 C760,5 380,85 0,60 Z" fill="#f4f6f5"></path>
+        <path d="M0,60 C380,85 760,5 1120,65 C1280,85 1380,45 1440,25" stroke="url(#goldStroke)" stroke-width="4" fill="none"></path>
+        <path d="M0,67 C380,92 760,12 1120,72 C1280,92 1380,52 1440,32" stroke="rgba(58, 89, 83, 0.65)" stroke-width="4.5" fill="none"></path>
+      </svg>
+    </div>
+
+    <!-- Curved Ambient Color Bands -->
+    <div class="curved-accent-band curved-accent-band-gold" style="bottom: 10%; right: -50px; width: 600px; height: 220px;"></div>
+    <div class="curved-accent-band curved-accent-band-green" style="top: 15%; left: -60px; width: 450px; height: 160px; opacity: 0.25;"></div>
+
+    <div class="container">
+      <div class="founder-grid">
+        
+        <!-- Image & Badge -->
+        <div class="founder-media reveal">
+          <img src="assets/images/founder_juan_renedo.jpg" alt="Juan Renedo - Fundador Trias Institute">
+          <div class="founder-badge-overlay">
+            <h4>Juan Renedo</h4>
+            <p>Fundador & Visionario de Trias Institute</p>
+          </div>
+        </div>
+
+        <!-- Bio & Content -->
+        <div class="founder-content reveal reveal-delay-2">
+          <span class="badge badge-gold">LIDERAZGO & TRAYECTORIA</span>
+          <h2>Impulsando a la nueva generación de <span class="text-gold-gradient">referentes mundiales</span></h2>
+          <div class="founder-role">Especialista en Coaching y Mentoría de Conferencistas, Autores y Consultores</div>
+
+          <div class="founder-quote">
+            “Toda persona que ha acumulado experiencia y conocimiento tiene la posibilidad de convertirlos en valor para otros y construir un legado perdurable.”
+          </div>
+
+          <div class="founder-bio">
+            <p>
+              A partir de su dilatada trayectoria en formación y acompañamiento profesional a nivel internacional, <strong>Juan Renedo</strong> creó el concepto <strong>Trias</strong> como una metodología rigurosa basada en la integración de tres dimensiones: <em>Hablar, Escribir y Asesorar</em>.
+            </p>
+            <p>
+              Trias Institute nace para hacer posible ese proceso de manera estructurada, profesional y escalable, eliminando el ensayo y error para profesionales de alto nivel.
+            </p>
+          </div>
+
+          <button class="btn btn-primary" data-open-modal="lead-modal">
+            <i data-lucide="user-check" style="width: 18px; height: 18px;"></i>
+            <span>Conoce la Mentoría con Juan Renedo</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Franja 7: Sesgado en Pico Angular / Chevron (Fundador Pine to Franquicias White) -->
+    <div class="section-divider-curve divider-pos-bottom">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path d="M0,15 L720,70 L1440,15 L1440,90 L0,90 Z" fill="#ffffff"></path>
+        <path d="M0,15 L720,70 L1440,15" stroke="url(#goldStroke)" stroke-width="4.5" fill="none"></path>
+        <path d="M0,22 L720,77 L1440,22" stroke="rgba(58, 89, 83, 0.65)" stroke-width="5" fill="none"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TRIAS FRANCHISING & EXPANSIÓN GLOBAL
+       ========================================================================== -->
+  <section class="franchise-section franchise-editorial" id="franquicias">
+    <!-- Curved Ambient Color Bands -->
+
+    <div class="container">
+      <div class="franchise-banner reveal">
+        <div class="franchise-grid">
+          
+          <div class="franchise-content">
+            <span class="badge badge-gold">OPORTUNIDAD INTERNACIONAL</span>
+            <h2>Lleva Trias a tu <span class="franchise-title-accent">ciudad, país y mercado</span></h2>
+            <p>
+              Trias Institute está diseñado para expandirse globalmente mediante un modelo de franquicias y representación exclusiva. Conviértete en el referente de Trias en tu región.
+            </p>
+
+            <ul class="franchise-benefits">
+              <li>
+                <i data-lucide="check-circle-2"></i>
+                <span><strong>Metodología y Marca Consolidada:</strong> Respaldo de un sistema internacional probado.</span>
+              </li>
+              <li>
+                <i data-lucide="check-circle-2"></i>
+                <span><strong>Múltiples Líneas de Ingreso:</strong> Seminarios, talleres, programas 360, eventos y certificaciones.</span>
+              </li>
+              <li>
+                <i data-lucide="check-circle-2"></i>
+                <span><strong>Territorio y Exclusividad:</strong> Capacidad de liderazgo en tu mercado local.</span>
+              </li>
+              <li>
+                <i data-lucide="check-circle-2"></i>
+                <span><strong>Transferencia Total de Know-How:</strong> Materiales, herramientas y formación continua.</span>
+              </li>
+            </ul>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <button class="btn btn-primary btn-lg" data-open-modal="franchise-modal">
+                <i data-lucide="globe" style="width: 20px; height: 20px;"></i>
+                <span>Postular como Representante Trias</span>
+              </button>
+              <a href="assets/pdf/DOSSIER%20TRIAS.pdf" download="DOSSIER_TRIAS.pdf" target="_blank" class="btn btn-secondary btn-lg">
+                <i data-lucide="file-text" style="width: 20px; height: 20px;"></i>
+                <span>Descargar Dossier Institucional (PDF)</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="franchise-visual reveal reveal-delay-2">
+            <img loading="lazy" src="assets/images/trias_franchise_realistic.jpg" alt="Red Global y Franquicias Trias Institute">
+            <div class="franchise-visual-overlay">
+              <div class="franchise-overlay-badge">
+                <span class="badge-dot" ></span>
+                <span>CONVOCATORIA INTERNACIONAL</span>
+              </div>
+              <div class="franchise-overlay-info">
+                <h4>Expansión Global Estratégica</h4>
+                <p>Madrid · Miami · Ciudad de México · Bogotá · São Paulo · Buenos Aires · Santiago</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIOS / CASOS DE ÉXITO
+       ========================================================================== -->
+  <section class="testimonials-section">
+    <!-- Curved Ambient Color Bands -->
+    <div class="curved-accent-band curved-accent-band-green" style="top: 20%; right: -60px; width: 500px; height: 180px; opacity: 0.15;"></div>
+    <div class="curved-accent-band curved-accent-band-gold" style="bottom: 15%; left: -60px; width: 450px; height: 150px; opacity: 0.15;"></div>
+
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">HISTORIAS DE TRANSFORMACIÓN</span>
+        <h2>Profesionales que se convirtieron en <span class="text-gold-gradient">referentes</span></h2>
+        <p>Descubre cómo especialistas de diversas ramas escalaron su impacto con el Método Trias.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card reveal">
+          <div class="testi-header">
+            <img src="assets/images/testi_alejandro_unique.jpg" alt="Dr. Alejandro Morán" class="testi-avatar">
+            <div class="testi-info">
+              <h4>Dr. Alejandro Morán</h4>
+              <p>Médico Especialista & Conferencista</p>
+            </div>
+          </div>
+          <div class="testi-body">
+            “Tenía 22 años de práctica clínica pero mis ideas no salían del consultorio. Con Trias creé mi conferencia magistral y hoy participo en congresos internacionales en Madrid y Miami cobrando honorarios acordes a mi experiencia.”
+          </div>
+          <div class="testi-tag">Ruta: Conferencista Pro</div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testi-header">
+            <img src="assets/images/testi_mariana_unique.jpg" alt="Lic. Mariana Valdés" class="testi-avatar">
+            <div class="testi-info">
+              <h4>Lic. Mariana Valdés</h4>
+              <p>Abogada Corporativa & Autora</p>
+            </div>
+          </div>
+          <div class="testi-body">
+            “Escribir mi primer libro con el método editorial de Trias fue revelador. No solo me posicionó como la especialista número uno en cumplimiento normativo, sino que triplicó la demanda de mi firma de consultoría.”
+          </div>
+          <div class="testi-tag">Ruta: Autor & Consultoría</div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testi-header">
+            <img src="assets/images/testi_carlos_unique.jpg" alt="Ing. Carlos Mendonça" class="testi-avatar">
+            <div class="testi-info">
+              <h4>Ing. Carlos Mendonça</h4>
+              <p>Director Trias São Paulo</p>
+            </div>
+          </div>
+          <div class="testi-body">
+            “Adquirir la representación de Trias en São Paulo me permitió crear una comunidad de alto nivel. La metodología de Juan Renedo es sólida, estructurada y extraordinariamente rentable.”
+          </div>
+          <div class="testi-tag">Ruta: Franquicia Internacional</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PREGUNTAS FRECUENTES (FAQ)
+       ========================================================================== -->
+  <section class="faq-section">
+    <!-- Franja 8: Onda Fluida en S (Testimonios Light Slate to FAQ Pine) -->
+    <div class="section-divider-curve divider-pos-top">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path d="M0,0 L1440,0 L1440,55 C960,-5 480,85 0,20 Z" fill="#f4f6f5"></path>
+        <path d="M0,20 C480,85 960,-5 1440,55" stroke="url(#goldStroke)" stroke-width="4" fill="none"></path>
+        <path d="M0,27 C480,92 960,2 1440,62" stroke="rgba(58, 89, 83, 0.65)" stroke-width="4.5" fill="none"></path>
+      </svg>
+    </div>
+
+    <!-- Curved Ambient Color Bands -->
+    <div class="curved-accent-band curved-accent-band-gold" style="top: 15%; left: 10%; width: 500px; height: 160px; opacity: 0.15;"></div>
+
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-gold">RESOLVEMOS TUS DUDAS</span>
+        <h2>Preguntas <span class="text-gold-gradient">Frecuentes</span></h2>
+        <p>Todo lo que necesitas saber antes de iniciar tu proceso en Trias Institute.</p>
+      </div>
+
+      <div class="faq-wrapper reveal">
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Necesito tener experiencia previa como conferencista o autor?</span>
+            <span class="faq-icon"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>No. El sistema de Trias Institute está diseñado específicamente para acompañar al profesional desde su experiencia inicial en su propio sector hasta la construcción de sus conferencias, libros y servicios de consultoría, paso a paso y con metodología probada.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿A qué profesiones está dirigido el sistema Trias?</span>
+            <span class="faq-icon"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>A todas las áreas donde exista conocimiento acumulado: empresarios, ejecutivos, médicos, abogados, ingenieros, psicólogos, educadores, deportistas y especialistas. Si tienes experiencia y algo valioso que aportar, Trias te ayuda a monetizarlo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Los programas son presenciales, online o híbridos?</span>
+            <span class="faq-icon"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>Contamos con formatos híbridos y virtuales de alto nivel internacional, complementados con encuentros de networking, talleres intensivos y masterclasses presenciales en nuestras ciudades sede.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo funciona el modelo de Franquicias y Representación?</span>
+            <span class="faq-icon"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>El representante obtiene la exclusividad territorial para desarrollar formaciones, seminarios, eventos y certificaciones de Trias Institute en su ciudad o país, con respaldo de marca, metodología, formación de formadores y acompañamiento central.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FINAL CTA & LEAD CAPTURE
+       ========================================================================== -->
+  <section class="final-cta-section" id="contacto">
+    <!-- Curved Ambient Color Bands -->
+    <div class="curved-accent-band curved-accent-band-gold" style="top: 15%; right: -50px; width: 600px; height: 220px;"></div>
+    <div class="curved-accent-band curved-accent-band-green" style="bottom: 10%; left: -60px; width: 550px; height: 200px;"></div>
+
+    <div class="container">
+      <div class="cta-box reveal">
+        <div class="cta-grid">
+          
+          <div class="cta-info">
+            <span class="badge badge-gold">INICIA TU TRANSFORMACIÓN</span>
+            <h2>Tu experiencia puede ser tu mayor <span class="text-gold-gradient">activo</span>.</h2>
+            <p>
+              ¿Tienes una historia que contar? ¿Un método que enseñar? ¿Un libro que escribir? ¿Una conferencia que compartir? Da el paso hoy mismo.
+            </p>
+            <div class="cta-points">
+              <div class="cta-point">
+                <i data-lucide="check"></i>
+                <span>Evaluación de perfil confidencial y sin compromiso.</span>
+              </div>
+              <div class="cta-point">
+                <i data-lucide="check"></i>
+                <span>Atención directa de un mentor del equipo de Juan Renedo.</span>
+              </div>
+              <div class="cta-point">
+                <i data-lucide="check"></i>
+                <span>Acceso prioritario a la convocatoria internacional 2026.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="lead-form">
+            <h3 style="font-size: 1.4rem; margin-bottom: 1.5rem; text-align: center;">Solicitar Información y Admisión</h3>
+            <form id="main-lead-form">
+              <div class="form-group">
+                <label class="form-label" for="full-name">Nombre y Apellidos</label>
+                <input type="text" id="full-name" class="form-input" placeholder="Ej. Roberto Sánchez" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Correo Electrónico Profesional</label>
+                <input type="email" id="email" class="form-input" placeholder="roberto@empresa.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Teléfono / WhatsApp (con código de país)</label>
+                <input type="tel" id="phone" class="form-input" placeholder="+34 600 000 000" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="program-interest">Área de Mayor Interés</label>
+                <select id="program-interest" class="form-select">
+                  <option value="trias360">Trias 360 (Trilogía Completa)</option>
+                  <option value="conferencista">Programa para Conferencistas</option>
+                  <option value="autor">Programa para Autores & Libros</option>
+                  <option value="consultor">Programa para Consultores</option>
+                  <option value="franquicia">Franquicia / Representación de País</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 1.5rem;">
+                <i data-lucide="message-circle" style="width: 20px; height: 20px;"></i>
+                <span>Postular / Enviar por WhatsApp</span>
+              </button>
+              <div style="text-align: center; margin-top: 0.85rem; font-size: 0.82rem; color: #94a3b8; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                <i data-lucide="shield-check" style="width: 15px; height: 15px; color: var(--gold-light);"></i>
+                <span>Tus datos se enviarán directamente a nuestro WhatsApp oficial</span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-symbol">
+              <img
+                src="assets/logo/trias_emblem_white.png"
+                alt="Emblema Trias Institute"
+                class="brand-mark-image"
+                loading="lazy"
+              >
+            </div>
+            <div class="logo-text">
+              <span class="main-name">TRIAS INSTITUTE</span>
+              <span class="sub-name">AUTORES · DISERTANTES · CONSULTORES</span>
+            </div>
+          </div>
+          <p>
+            Organización internacional de formación, mentoría y desarrollo profesional fundada por Juan Renedo. Convierte tu conocimiento en influencia y tu experiencia en legado.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Programas</h4>
+          <ul class="footer-links">
+            <li><a href="#trilogia">Trias 360 Integral</a></li>
+            <li><a href="#trilogia">Programa Conferencistas</a></li>
+            <li><a href="#trilogia">Programa Autores</a></li>
+            <li><a href="#trilogia">Programa Consultores</a></li>
+            <li><a href="#temas">+900 Temas de Capacitación</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <ul class="footer-links">
+            <li><a href="#proposito">Propósito & Misión</a></li>
+            <li><a href="#metodo">El Método Trias</a></li>
+            <li><a href="#fundador">Juan Renedo</a></li>
+            <li><a href="#franquicias">Franquicias Internacionales</a></li>
+            <li><a href="#diagnostico">Diagnóstico de Perfil</a></li>
+            <li><a href="assets/pdf/DOSSIER%20TRIAS.pdf" download="DOSSIER_TRIAS.pdf" target="_blank" style="color: var(--gold-light); font-weight: 600;"><i data-lucide="download" style="width: 14px; height: 14px; vertical-align: middle; margin-right: 4px;"></i> Descargar Dossier (PDF)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Sedes & Presencia</h4>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Madrid · Miami · Ciudad de México · Bogotá · São Paulo · Buenos Aires · Santiago.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Trias Institute. Todos los derechos reservados. Fundado por Juan Renedo.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: var(--text-muted);">Términos & Condiciones</a>
+          <a href="#" style="color: var(--text-muted);">Política de Privacidad</a>
+          <a href="#" style="color: var(--text-muted);">Código de Ética</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS
+       ========================================================================== -->
+  
+  <!-- Modal 1: Lead Admission Modal -->
+  <div class="modal-backdrop" id="lead-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Cerrar modal"><i data-lucide="x"></i></button>
+      <span class="badge badge-gold" style="margin-bottom: 1rem;">PROCESO DE ADMISIÓN</span>
+      <h3 style="font-size: 1.65rem; margin-bottom: 0.5rem;">Postulación Trias Institute</h3>
+      <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.75rem;">
+        Completa el formulario y un asesor senior coordinará tu entrevista de perfil.
+      </p>
+
+      <form id="modal-lead-form">
+        <div class="form-group">
+          <label class="form-label" for="m-name">Nombre Completo</label>
+          <input type="text" id="m-name" class="form-input" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="m-email">Correo Electrónico</label>
+          <input type="email" id="m-email" class="form-input" placeholder="correo@ejemplo.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="m-phone">WhatsApp / Móvil</label>
+          <input type="tel" id="m-phone" class="form-input" placeholder="+1 000 000 0000" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="m-program">Programa de Interés</label>
+          <select id="m-program" class="form-select">
+            <option value="trias360">Trias 360 (Conferencista + Autor + Consultor)</option>
+            <option value="conferencista">Especialidad Conferencista</option>
+            <option value="autor">Especialidad Autor & Libros</option>
+            <option value="consultor">Especialidad Consultor</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 1.5rem;">
+          <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+          <span>Confirmar y Enviar por WhatsApp</span>
+        </button>
+        <div style="text-align: center; margin-top: 1.25rem;">
+          <a href="assets/pdf/DOSSIER%20TRIAS.pdf" download="DOSSIER_TRIAS.pdf" target="_blank" style="font-size: 0.85rem; color: var(--gold-light); text-decoration: underline; display: inline-flex; align-items: center; gap: 5px;">
+            <i data-lucide="download" style="width: 14px; height: 14px;"></i>
+            <span>O descarga directamente el Dossier Oficial (PDF)</span>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 2: Franchising Modal -->
+  <div class="modal-backdrop" id="franchise-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Cerrar modal"><i data-lucide="x"></i></button>
+      <span class="badge badge-gold" style="margin-bottom: 1rem;">REPRESENTACIÓN INTERNACIONAL</span>
+      <h3 style="font-size: 1.65rem; margin-bottom: 0.5rem;">Franquicias Trias Institute</h3>
+      <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.75rem;">
+        Abre una sede de Trias Institute en tu ciudad y lidera el mercado del conocimiento.
+      </p>
+
+      <form id="modal-franchise-form">
+        <div class="form-group">
+          <label class="form-label" for="f-name">Nombre y Apellidos</label>
+          <input type="text" id="f-name" class="form-input" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-email">Correo Corporativo</label>
+          <input type="email" id="f-email" class="form-input" placeholder="tu@empresa.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-phone">Teléfono / WhatsApp</label>
+          <input type="tel" id="f-phone" class="form-input" placeholder="+34..." required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-city">Ciudad y País Propuestos</label>
+          <input type="text" id="f-city" class="form-input" placeholder="Ej. Medellín, Colombia / Santiago, Chile" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 1.5rem;">
+          <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+          <span>Solicitar Franquicia por WhatsApp</span>
+        </button>
+        <div style="text-align: center; margin-top: 1.25rem;">
+          <a href="assets/pdf/DOSSIER%20TRIAS.pdf" download="DOSSIER_TRIAS.pdf" target="_blank" style="font-size: 0.85rem; color: var(--gold-light); text-decoration: underline; display: inline-flex; align-items: center; gap: 5px;">
+            <i data-lucide="download" style="width: 14px; height: 14px;"></i>
+            <span>Descargar directamente el Dossier Institucional (PDF)</span>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://api.whatsapp.com/send?phone=5511914285660&text=Hola%2C%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20programas%20de%20Trias%20Institute" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="floating-whatsapp-btn" 
+     aria-label="Contactar por WhatsApp">
+    <div class="whatsapp-pulse"></div>
+    <i data-lucide="message-circle" style="width: 28px; height: 28px;"></i>
+    <span class="whatsapp-tooltip">¿Conversamos por WhatsApp?</span>
+  </a>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/interactive.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize Lucide icons on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>
