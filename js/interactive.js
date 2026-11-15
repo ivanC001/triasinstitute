@@ -71,67 +71,56 @@ const TOPICS_DATA = [
 function initTopicsExplorer() {
   const grid = document.getElementById('topics-grid');
   const searchInput = document.getElementById('topic-search');
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const topicsCountEl = document.getElementById('topics-count-badge');
-
-  if (!grid) return;
-
-  let currentCategory = 'all';
-  let searchTerm = '';
-
+  const filterBtns = document.querySelectorAll('#temas .filter-btn');
+  const count = document.getElementById('topics-count-badge');
+  if (!grid || !searchInput) return;
+  const groups = [
+    ['oratoria', 'Oratoria y escenario', 'Comunica tus ideas con claridad y presencia.', 'mic'],
+    ['marca', 'Marca y posicionamiento', 'Haz visible el valor de tu experiencia.', 'award'],
+    ['editorial', 'Libros y editorial', 'Convierte tu conocimiento en una obra propia.', 'book-open'],
+    ['consultoria', 'Consultoría B2B', 'Diseña soluciones que transformen organizaciones.', 'briefcase'],
+    ['ia', 'Inteligencia artificial aplicada', 'Integra nuevas herramientas a tu práctica profesional.', 'cpu'],
+    ['liderazgo', 'Liderazgo y ventas', 'Inspira equipos y construye nuevas oportunidades.', 'users']
+  ];
+  let category = 'all';
+  const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   function render() {
-    const filtered = TOPICS_DATA.filter(t => {
-      const matchCat = currentCategory === 'all' || t.category === currentCategory;
-      const matchSearch = t.title.toLowerCase().includes(searchTerm.toLowerCase());
-      return matchCat && matchSearch;
-    });
-
-    if (topicsCountEl) {
-      topicsCountEl.textContent = `Mostrando ${filtered.length} de +900 temas`;
-    }
-
-    if (filtered.length === 0) {
-      grid.innerHTML = `
-        <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 1rem; color: var(--text-secondary);">
-          <i data-lucide="search-x" style="width: 48px; height: 48px; margin-bottom: 1rem; color: var(--gold-light);"></i>
-          <h3>No se encontraron temas con "${searchTerm}"</h3>
-          <p>Prueba con otros términos como Oratoria, Liderazgo, IA, Libros o Consultoría.</p>
-        </div>
-      `;
-      if (window.lucide) lucide.createIcons();
+    const term = normalize(searchInput.value.trim());
+    const filtered = TOPICS_DATA.filter(item => (category === 'all' || item.category === category) && normalize(item.title).includes(term));
+    count.textContent = `${filtered.length} temas en esta selección`;
+    grid.replaceChildren();
+    if (!filtered.length) {
+      const empty = document.createElement('div');
+      empty.className = 'topics-empty';
+      const title = document.createElement('h3');
+      title.textContent = 'No encontramos ese tema';
+      const text = document.createElement('p');
+      text.textContent = 'Prueba con otra palabra o consulta todas las áreas.';
+      const reset = document.createElement('button');
+      reset.type = 'button'; reset.textContent = 'Ver todos los temas';
+      reset.addEventListener('click', () => { searchInput.value = ''; select('all'); searchInput.focus(); });
+      empty.append(title, text, reset); grid.append(empty);
       return;
     }
-
-    grid.innerHTML = filtered.map(item => `
-      <div class="topic-tag-card shine-effect">
-        <div class="topic-tag-icon">
-          <i data-lucide="${item.icon || 'check-circle'}" style="width: 22px; height: 22px;"></i>
-        </div>
-        <div class="topic-tag-title">${item.title}</div>
-      </div>
-    `).join('');
-
-    if (window.lucide) {
-      lucide.createIcons();
-    }
-  }
-
-  if (searchInput) {
-    searchInput.addEventListener('input', (e) => {
-      searchTerm = e.target.value;
-      render();
+    groups.forEach(([key, title, description, icon], index) => {
+      const items = filtered.filter(item => item.category === key);
+      if (!items.length) return;
+      const group = document.createElement('details');
+      group.className = 'topic-group';
+      group.dataset.area = key;
+      group.open = !!term || category !== 'all' || index === 0;
+      group.innerHTML = `<summary><span class="topic-group-symbol"><i data-lucide="${icon}" aria-hidden="true"></i></span><span class="topic-group-heading"><strong>${title}</strong><span>${description}</span></span><span class="topic-group-count">${items.length} temas</span><i class="topic-group-chevron" data-lucide="plus" aria-hidden="true"></i></summary><ul class="topic-group-list">${items.map(item => `<li>${item.title}</li>`).join('')}</ul>`;
+      grid.append(group);
     });
+    if (window.lucide) lucide.createIcons();
   }
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentCategory = btn.getAttribute('data-filter');
-      render();
-    });
-  });
-
+  function select(key) {
+    category = key;
+    filterBtns.forEach(btn => { const active = btn.dataset.filter === key; btn.classList.toggle('active', active); btn.setAttribute('aria-pressed', String(active)); });
+    render();
+  }
+  filterBtns.forEach(btn => btn.addEventListener('click', () => select(btn.dataset.filter)));
+  searchInput.addEventListener('input', render);
   render();
 }
 
@@ -568,7 +557,7 @@ function initForms() {
    ========================================================================== */
 const HERO_DATA = {
   speaker: {
-    img: "assets/images/hero_speaker_stage.jpg",
+    img: "assets/images/actualizacion/conferencista-presentacion.webp",
     badge1Icon: "mic",
     badge1Title: "🎤 Disertante / Conferencista",
     badge1Sub: "Inspira · Motiva · Trasciende",
@@ -577,7 +566,7 @@ const HERO_DATA = {
     badge2Sub: "Keynotes & Auditorios Masivos"
   },
   author: {
-    img: "assets/images/hero_author_spotlight.jpg",
+    img: "assets/images/actualizacion/autora-escritura.webp",
     badge1Icon: "book-open",
     badge1Title: "📚 Autor Referente",
     badge1Sub: "Escribe tu Legado · Ideas que Trascienden",
@@ -586,7 +575,7 @@ const HERO_DATA = {
     badge2Sub: "Metodología y Marcos Propios"
   },
   consultant: {
-    img: "assets/images/hero_consultant_summit.jpg",
+    img: "assets/images/actualizacion/consultoria-estrategica.webp",
     badge1Icon: "briefcase",
     badge1Title: "💼 Consultor & Mentor",
     badge1Sub: "Experto · Estratégico · Esencial",
@@ -595,7 +584,7 @@ const HERO_DATA = {
     badge2Sub: "Soluciones de Alto Valor"
   },
   trias360: {
-    img: "assets/images/trias_hero_main.jpg",
+    img: "assets/images/actualizacion/reunion-institucional.webp",
     badge1Icon: "award",
     badge1Title: "👑 Trilogía Trias Institute",
     badge1Sub: "Tres Caminos. Un Propósito: Dejar Huella.",
@@ -634,6 +623,7 @@ function initHeroTrilogySwitcher() {
     heroImg.classList.add('fade-out');
     setTimeout(() => {
       heroImg.src = data.img;
+      heroImg.alt = ({ speaker: "Presentación profesional en TRIAS", author: "Trabajo de escritura y revisión editorial", consultant: "Sesión de consultoría estratégica", trias360: "Reunión de trabajo institucional en TRIAS" })[targetKey];
       if (badge1Title) badge1Title.textContent = data.badge1Title;
       if (badge1Sub) badge1Sub.textContent = data.badge1Sub;
       if (badge1Icon) badge1Icon.innerHTML = `<i data-lucide="${data.badge1Icon}"></i>`;

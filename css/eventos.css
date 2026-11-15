@@ -42,3 +42,9 @@ body.events-page {
 @media (max-width: 760px) { .events-grid { grid-template-columns: 1fr; } .events-intro { padding-top: 108px; padding-bottom: 36px; } .events-breadcrumb { margin-bottom: 28px; } .event-content { padding: 22px; } .events-footer { flex-direction: column; align-items: flex-start; } }
 @media (prefers-reduced-motion: reduce) { .event-image img, .event-card { transition: none; } }
 
+/* Portada original del evento sin recortes. */
+.event-image-brochure { aspect-ratio:773 / 1000; background:#102c21; }
+.event-image-brochure img { object-fit:contain; }
+.event-image-brochure:hover img { transform:none; }
+.event-image-brochure .event-category { top:16px; bottom:auto; right:16px; left:auto; }
+.event-dossiers { display:flex; flex-direction:column; gap:12px; }
