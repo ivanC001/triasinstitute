@@ -48,3 +48,15 @@ body.events-page {
 .event-image-brochure:hover img { transform:none; }
 .event-image-brochure .event-category { top:16px; bottom:auto; right:16px; left:auto; }
 .event-dossiers { display:flex; flex-direction:column; gap:12px; }
+
+/* Enlaces legales del pie (17/11/2026). */
+.events-legal { display:flex; flex-wrap:wrap; gap:8px 20px; font-size:.8rem; }
+.events-legal a { color:var(--text-secondary); }
+.events-legal a:hover { color:var(--gold-light); }
+
+/* Redes sociales de TRIAS en el pie (18/11/2026). */
+.events-socials { display:flex; gap:10px; }
+.events-socials a { display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border:1px solid var(--border-gold-subtle); border-radius:50%; color:var(--gold-light); transition:background .2s,color .2s,border-color .2s; }
+.events-socials a:hover { background:var(--gold-light); border-color:var(--gold-light); color:#13241d; }
+.events-socials a:focus-visible { outline:3px solid var(--gold-light); outline-offset:3px; }
+@media (prefers-reduced-motion:reduce) { .events-socials a { transition:none; } }

@@ -3240,3 +3240,18 @@ ul, ol {
     transition: none;
   }
 }
+
+/* Enlaces legales del pie (17/11/2026). */
+.pie__politicas { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
+.pie__politicas a { color: rgba(255, 255, 255, 0.85); text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.3); text-underline-offset: 3px; }
+.pie__politicas a:hover { color: var(--gold-400); text-decoration-color: currentColor; }
+
+/* Redes sociales de TRIAS en el pie (18/11/2026). */
+.pie__redes { display: flex; align-items: center; justify-content: space-between; gap: 1rem 2rem; flex-wrap: wrap; padding-top: 1.4rem; padding-bottom: 1.4rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+.pie__redes-titulo { font-family: var(--font-heading); font-weight: 700; font-size: 0.9rem; color: var(--white); }
+.pie__redes-lista { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.pie__redes-lista a { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; padding: 0.55rem 1rem; border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 999px; color: rgba(255, 255, 255, 0.88); font-family: var(--font-heading); font-weight: 600; font-size: 0.85rem; transition: background 0.2s, color 0.2s, border-color 0.2s; }
+.pie__redes-lista a svg { flex-shrink: 0; }
+.pie__redes-lista a:hover { background: var(--gold-400); border-color: var(--gold-400); color: var(--navy-950); }
+.pie__redes-lista a:focus-visible { outline: 3px solid var(--gold-400); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .pie__redes-lista a { transition: none; } }

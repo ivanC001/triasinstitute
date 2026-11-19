@@ -20,9 +20,9 @@ node servidor.js
 Cada etiqueta `<img>` de `index.html` apunta a una fotografía distinta y exclusiva para su sección:
 
 1. `assets/img/hero-bg-speaker.jpg` — Hero principal: conferencista en escenario a la derecha ante gran auditorio iluminado.
-2. `assets/img/proposito-keynote.jpg` — Propósito del diplomado: retrato frontal de conferencista internacional con micrófono.
+2. `assets/img/proposito-conferencista-trias.jpg` — Propósito del diplomado: conferencista presentando con un ejemplar TRIAS (foto del zip FOTOS DE TRIAS, 17/11/2026).
 3. `assets/img/metodo-live-training.jpg` — Metodología *Learning by Doing*: sesión interactiva en vivo desde estudio con multipantalla.
-4. `assets/img/experiencia-sala-ejecutiva.jpg` — La Máxima Experiencia: equipo corporativo capacitándose junto en sala de directorio (1 sola conexión).
+4. `assets/img/experiencia-sala-trias.jpg` — La Máxima Experiencia: asesora presentando el programa a ejecutivos en la sala TRIAS (foto del zip, 17/11/2026).
 5. `assets/img/mod1-autoridad-escena.jpg` — Módulo 1: disertante senior en entrevista escénica (mentalidad y autoridad).
 6. `assets/img/mod2-foro-internacional.jpg` — Módulo 2: escenario circular de cumbre internacional bajo reflectores.
 7. `assets/img/mod3-contratos-corporativos.jpg` — Módulo 3: cierre y firma de contrato ejecutivo de conferencias frente a rascacielos.
@@ -31,6 +31,6 @@ Cada etiqueta `<img>` de `index.html` apunta a una fotografía distinta y exclus
 10. `assets/img/razones-microfono-escenario.jpg` — 15 razones estratégicas: micrófono profesional en escenario con audiencia cálida de fondo.
 11. `assets/img/certificado-oficial.jpg` — Modelo oficial enmarcado del Certificado TRIAS Speaker Millionaire®.
 12. `assets/img/dirigido-lider-ejecutivo.jpg` — ¿A quién va dirigido?: retrato ejecutivo de consultor/directivo profesional.
-13. `assets/img/renedo.jpg` — Dirección Académica: retrato oficial en color natural de J. Renedo.
+13. `assets/img/renedo-director.jpg` — Dirección Académica: retrato de J. Renedo en su oficina TRIAS (foto del zip, 17/11/2026).
 14. `assets/logo/trias_emblem.png` — Emblema institucional oficial de Trias Institute.
 15. `assets/img/organiza-sede-usa.jpg` — ¿Quién organiza y avala?: arquitectura corporativa moderna en Estados Unidos.

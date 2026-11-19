@@ -12,7 +12,7 @@
   /* ---------- Configuración oficial del programa ---------- */
   var INICIO = new Date('2026-11-12T17:00:00-06:00');     // Jueves 12 nov · 5:00 pm Chicago (CST)
   var ANTICIPADO = new Date('2026-11-09T23:59:59-06:00'); // Lunes 9 nov · cierre matrícula bonificada
-  var WHATSAPP = '18127572838';
+  var WHATSAPP = '5511914285660'; // WhatsApp oficial Trias Institute (+55 11 91428-5660)
 
   /* ---------- 1. Barra fija y menú móvil ---------- */
   var barra = $('#barra');
